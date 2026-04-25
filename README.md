@@ -8,7 +8,7 @@ S2GL is a deep learning framework designed for brain network analysis and classi
 
 ## Key Features
 
-- **Multimodal Learning**: Jointly processes structural and functional brain connectivity graphs
+- **Multi-modal Learning**: Jointly processes structural and functional brain connectivity graphs
 - **Cross-Attention Interaction (CAI)**: Enables information exchange between SC and FC modalities
 - **Multi-modal Feature Aggregation (MFA)**: Fuses features from multiple modalities using mean, max, and sum pooling
 - **Graph Autoencoder**: Uses GCN-based encoder with link prediction decoder for representation learning
