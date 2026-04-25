@@ -1,6 +1,6 @@
 # Unlocking Shared-Specific Features of Multi-Modal Brain Graphs for Accurate Psychiatric Diagnosis
 
-A multi-modal brain graoh framework for psychiatric diagnosis, leveraging both structural and functional connectivity graphs.
+A multi-modal brain graph framework for psychiatric diagnosis, leveraging both structural and functional connectivity graphs.
 
 ## Overview
 
