@@ -123,7 +123,7 @@ Cross-layer decoder for link prediction as an auxiliary task.
 ## Output
 
 The model outputs:
-- Per-fold accuracy, precision, recall, F1 scores
+- Per-fold accuracy, precision, recall, AUC
 - Mean metrics across all folds and runs
 
 ## Citation
