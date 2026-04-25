@@ -1,10 +1,10 @@
-# S2GL: Structure-Function Graph Learning for Brain Network Classification
+# Unlocking Shared-Specific Features of Multi-Modal Brain Graphs for Accurate Psychiatric Diagnosis
 
-A multimodal graph neural network framework for brain network classification, leveraging both structural and functional connectivity graphs.
+A multi-modal brain graoh framework for psychiatric diagnosis, leveraging both structural and functional connectivity graphs.
 
 ## Overview
 
-S2GL is a deep learning framework designed for brain network analysis and classification. It integrates structural connectivity (SC) and functional connectivity (FC) graphs through cross-attention mechanisms and multi-modal feature aggregation strategies.
+S2GL is a deep learning framework designed for brain network analysis and classification. It integrates structural connectivity (SC) and functional connectivity (FC) graphs through Shared-Specific Graph Learning (S2GL) framework,.
 
 ## Key Features
 
@@ -96,26 +96,6 @@ Each graph should be a PyTorch Geometric `Data` object with:
 python run.py
 ```
 
-### Key Arguments
-
-| Argument | Type | Default | Description |
-|----------|------|---------|-------------|
-| `--num_nodes` | int | 90 | Number of brain regions (nodes) |
-| `--num_features` | int | 90 | Dimension of node features |
-| `--num_classes` | int | 2 | Number of classification classes |
-| `--encoder_layers` | int | 2 | Number of GCN encoder layers |
-| `--decoder_layers` | int | 2 | Number of decoder layers |
-| `--encoder_dim` | int | 16 | Hidden dimension of encoder |
-| `--decoder_dim` | int | 256 | Hidden dimension of decoder |
-| `--num_fcnnlayers` | int | 4 | Number of FCNN classifier layers |
-| `--fcnn_dim` | int | 256 | Hidden dimension of FCNN |
-| `--dropout` | float | 0.5 | Dropout rate |
-| `--batch_size` | int | 16 | Training batch size |
-| `--lr` | float | 0.005 | Learning rate |
-| `--epoches` | int | 500 | Number of training epochs |
-| `--mask_ratio` | float | 0.7 | Edge masking ratio |
-| `--pool_ratio` | float | 0.25 | Pooling ratio for TopK |
-| `--mask_type` | str | 'um' | Mask type: 'um' (undirected) or 'dm' (directed) |
 
 ## Model Components
 
@@ -136,10 +116,9 @@ Learns unified pooling scores across both modalities and selects top-k important
 Cross-layer decoder for link prediction as an auxiliary task.
 
 ## Training Strategy
-
-- **10-fold Cross-Validation**: Repeated 3 times for robust evaluation
-- **Metrics**: Accuracy, Precision, Recall, F1-score
 - **Loss**: Cross-entropy + Link prediction loss + L2 regularization
+- **10-fold Cross-Validation**
+- **Metrics**: Accuracy, Precision, Recall, F1-score
 
 ## Output
 
@@ -149,12 +128,6 @@ The model outputs:
 
 ## Citation
 
-If you use this code, please cite the related paper.
 
-## License
 
-This project is for research purposes.
 
-## Contact
-
-For questions or issues, please open an issue in the repository.
